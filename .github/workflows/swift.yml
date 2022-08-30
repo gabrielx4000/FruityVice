@@ -8,10 +8,9 @@ on:
 
 jobs:
   build:
-
-    runs-on: macos-latest
-
+    runs-on: macos-12
     steps:
-    - uses: actions/checkout@v3
-    - name: Run tests
-      run: swift test -v
+    - name: Checkout the code
+      uses: actions/checkout@v3
+    - name: Build and test ( iOS 15.5)
+      run: xcodebuild test -scheme FruityVice -destination 'platform=iOS Simulator,OS=15.5,name=iPhone 8'
