@@ -1,0 +1,39 @@
+disabled_rules: # rule identifiers to exclude from running
+- line_length
+- identifier_name
+- sorted_imports
+
+excluded:
+- Pods
+
+opt_in_rules:
+  - closure_end_indentation
+  - closure_spacing
+  - empty_count
+  - explicit_init
+  - fatal_error_message
+  - first_where
+  - force_cast
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - missing_docs
+  - multiline_parameters
+  - operator_usage_whitespace
+  - orphaned_doc_comment
+  - protocol_property_accessors_order
+  - syntactic_sugar
+  - vertical_parameter_alignment_on_call
+
+vertical_whitespace:
+  severity: error
+trailing_whitespace:
+  severity: error
+  ignores_comments: true
+trailing_newline:
+  severity: error
+nesting:
+  severity: error
+  statement_level: 4
+  type_level: 4
+empty_count:
+  severity: warning
