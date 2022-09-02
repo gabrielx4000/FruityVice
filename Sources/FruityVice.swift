@@ -14,6 +14,14 @@ public struct FruityVice {
         self.urlString = urlString
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
     public func getFruitsPublisher() -> AnyPublisher<[Fruit], Error>? {
         guard let url = URL(string: urlString) else { return nil }
         
