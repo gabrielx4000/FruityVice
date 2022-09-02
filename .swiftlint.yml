@@ -5,6 +5,8 @@ disabled_rules: # rule identifiers to exclude from running
 
 excluded:
 - Pods
+- Tests
+- Package.swift
 
 opt_in_rules:
   - closure_end_indentation

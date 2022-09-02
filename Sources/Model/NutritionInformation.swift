@@ -1,17 +1,17 @@
 import Foundation
 
 public struct NutritionInformation: Decodable {
-    
+
     public var carbohydrates: Double
-    
+
     public var protein: Double
-    
+
     public var fat: Double
-    
+
     public var calories: Double
-    
+
     public var sugar: Double
-    
+
     public init(carbohydrates: Double, protein: Double, fat: Double, calories: Double, sugar: Double) {
         self.carbohydrates = carbohydrates
         self.protein = protein
@@ -19,5 +19,5 @@ public struct NutritionInformation: Decodable {
         self.calories = calories
         self.sugar = sugar
     }
-    
+
 }
